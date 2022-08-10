@@ -1,5 +1,7 @@
 let email = "banpna.flimzy_grub4290@gmail.com";
 let extraString="Jely with an L";
+let extraStringwithSpaces="              Jely         with an L      ";
+let nums = 154652368;
 
 //charAt()	Returns the character at a specified index (position)
 let charAt = email.charAt(3);
@@ -81,7 +83,64 @@ console.log(split[0]);
     //with limit parameter   Items after the limit are excluded.
     let splitLimit = extraString.split("", 7);
     console.log(splitLimit);
+    /*
+    [
+    'J', 'e', 'l',
+    'y', ' ', 'w',
+    'i'
+    ]
+    */
+   
+//startsWith()	Checks whether a string begins with specified characters
+//starting at position 0
+let startsWith = email.startsWith("gmail");
+console.log(startsWith);
+//false
+    
+    //starting at position 22
+    let startsWithPosition = email.startsWith("gmail", 23);
+    console.log(startsWithPosition);
+    //true
 
+//substr()	Extracts a number of characters from a string, from a start index (position)
+let substr = email.substr(5);
+console.log(substr);
+//a.flimzy_grub4290@gmail.com
+
+    //starting at index 1 and 4 more characters, (length)
+    let substrPosition = email.substr(1,4);
+    console.log(substrPosition);
+
+    //using engative start position
+    let substrPositionNeg = email.substr(-4,4);
+    console.log("substrPositionNeg: " + substrPositionNeg);
+    //.com    because it started from the end, and returned the 4 characters.
+
+//substring()	Extracts characters from a string, between two specified indices (positions)
+//start at index 1, and return upto (excluding) index 4)
+let substring = email.substring(1,4);
+console.log(substring);
+//anp
+
+//toUpperCase()	Returns a string converted to uppercase letters
+let toUpperCase = email.toUpperCase();
+console.log(toUpperCase);
+//BANPNA.FLIMZY_GRUB4290@GMAIL.COM
+
+//toLowerCase()	Returns a string converted to lowercase letters
+let toLowerCase = email.toLowerCase();
+console.log(toLowerCase);
+//banpna.flimzy_grub4290@gmail.com
+
+//toString()	Returns a string or a string object as a string
+let toString = nums.toString();
+console.log(toString + 1);
+//1546523681  it added a "1" to the end as opposed to addition 1 to make  154652369
+
+//trim()	Returns a string with removed whitespaces from start and end ONLY
+let trim = extraStringwithSpaces.trim();
+console.log(trim);
+//Jely         with an L
 
 
 
