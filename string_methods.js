@@ -1,147 +1,204 @@
-let email = "banpna.flimzy_grub4290@gmail.com";
-let extraString="Jely with an L";
-let extraStringwithSpaces="              Jely         with an L      ";
-let nums = 154652368;
-
 //charAt()	Returns the character at a specified index (position)
-let charAt = email.charAt(3);
+let charAtString = "felina";
+let charAt = charAtString.charAt(3);
+console.log("charAt() =>")
 console.log(charAt);
-//p
+/* charAt() =>
+i*/
+
 
 //concat() 	Returns two or more joined strings
-let concat = email.concat(extraString);
+let concatString = "Anakin";
+let concatSecondString = "Skywalker";
+let concat = concatString.concat(concatSecondString);
+console.log("concat() =>");
 console.log(concat);
-//banpna.flimzy_grub4290@gmail.comJely with an L
+/*concat() =>
+AnakinSkywalker */
 
 //endsWith()	Returns if a string ends with a specified value
-let endsWith = email.endsWith(".com");
+let endsWithString = "Harry is a wizard";
+let endsWith = endsWithString.endsWith("ard");
+console.log("endsWith(expectedValue) =>");
 console.log(endsWith);
-//true
+/*endsWith(expectedValue) =>
+true */
 
 //includes()	Returns if a string contains a specified value (value, start at)
-let includes = email.includes("pna", 2);
-console.log('("pna", 2)' + includes);
-//("pna", 2)true
-console.log('("pna", 5)' + includes);
-//("pna", 5)true
+let includesString = "I have the higher ground";
+let includes = includesString.includes("the", 2);
+console.log("includes(valueToLookFor, startIndex) =>");
+console.log(includes);
+/*includes(valueToLookFor, startIndex) =>
+true */
+
 
 //indexOf()	Returns the index (position) of the first occurrence of a value in a string
-let indexOf = email.indexOf(".");
+let indexOfString = "Bilbo Baggins of Bag End";
+let indexOf = indexOfString.indexOf("of");
+console.log("indexOf(stringToLookFor) =>");
 console.log(indexOf);
-//6
+/* indexOf(stringToLookFor) =>
+14*/
 
 //lastIndexOf()	Returns the index (position) of the last occurrence of a value in a string
-let lastIndexOf = email.lastIndexOf(".");
+let lastIndexOfString = "Polly Pocket has a Polly Pocket in her pocket";
+let lastIndexOf = lastIndexOfString.lastIndexOf("Pocket");
+console.log("lastIndexOf(valueToFind) =>");
 console.log(lastIndexOf);
-//28
+/*lastIndexOf(valueToFind) =>
+25 */
 
 //length	Returns the length of a string
-let length= email.length;
+let lengthString = "Geronimo! ya losers.";
+let length= lengthString.length;
+console.log("length =>");
 console.log(length);
-//32
+/*length =>
+20 */
 
 //match()	Searches a string for a value, or a regular expression, and returns the matches
-let match = email.match("lim");
+let matchString = "In the jungle";
+let match = matchString.match("jun");
+console.log("match() =>");
 console.log(match);
-// [
-//     'lim',
-//     index: 8,
-//     input: 'banpna.flimzy_grub4290@gmail.com',
-//     groups: undefined
-//   ]
+/*match() =>
+[ 'jun', index: 7, input: 'In the jungle', groups: undefined ] */
 
 //repeat()	Returns a new string with a number of copies of a string
-let repeat = email.repeat(3);
+let repeatString = "There is some good in this world";
+let repeat = repeatString.repeat(3);
+console.log("repeat(numberOfTimesToRepeat) =>");
 console.log(repeat);
-//banpna.flimzy_grub4290@gmail.combanpna.flimzy_grub4290@gmail.combanpna.flimzy_grub4290@gmail.com
+/*repeat(numberOfTimesToRepeat) =>
+There is some good in this worldThere is some good in this worldThere is some good in this world*/
 
 //replace()	Searches a string for a value, or a regular expression, and returns a string where the values are replaced
-let replace = email.replace("grub", "NNN-nnn-NNN");
+let replaceString = "I solemnly swear I am up to no good.";
+let replace = replaceString.replace("swear", "promise me Harry!");
+console.log("replace(valueToReplace, ReplaceWith) =>");
 console.log(replace);
-//banpna.flimzy_NNN-nnn-NNN4290@gmail.com
+/*replace(valueToReplace, ReplaceWith) =>
+I solemnly promise me Harry! I am up to no good. */
 
 //search()	Searches a string for a value, or regular expression, and returns the index (position) of the match
-let search = email.search("mzy");
+let searchString = "Try not. Do or do not. There is no try";
+let search = searchString.search("try");
+console.log("search(valueToSearch) =>");
 console.log(search);
-//10
+/* search(valueToSearch) =>
+35*/
 
 //slice()	Extracts a part of a string and returns a new string
-let slice = email.slice(0,5);
+let sliceString = "Congratulations. You are being rescued.";
+let slice = sliceString.slice(5,9);
+console.log("slice(startIndex, includeIndex) =>");
 console.log(slice);
-//banpn
+/* slice(startIndex, includeIndex) =>
+atul*/
 
     //A negative number selects from the end of the string.
-    let sliceNeg = email.slice(0,-5);
+    let sliceNegativeString = "Be careful not to choke on your aspirations, director.";
+    let sliceNeg = sliceNegativeString.slice(0,-5);
+    console.log("slice(endOfString, lengthFromEndOfString) =>");
     console.log(sliceNeg);
-    //banpna.flimzy_grub4290@gmai
+    /*slice(endOfString, lengthFromEndOfString) =>
+    Be careful not to choke on your aspirations, dire */
 
 //split()	Splits a string into an array of substrings
-let split = email.split("@");
+let spiltString = "Fear leads to anger, anger leads to hate, hate leads to suffering";
+let split = spiltString.split("hate");
+console.log("split(valueToSplitAt) =>");
 console.log(split[0]);
-//banpna.flimzy_grub4290
+/*split(valueToSplitAt) =>
+Fear leads to anger, anger leads to  */
 
     //with limit parameter   Items after the limit are excluded.
-    let splitLimit = extraString.split("", 7);
+    let splitWithDelimiterString = "Laugh it up, fuzzball!";
+    let splitLimit = splitWithDelimiterString.split(" ", 7);
+    console.log("split(delimiter, numberOfStringToReturn) =>");
     console.log(splitLimit);
-    /*
-    [
-    'J', 'e', 'l',
-    'y', ' ', 'w',
-    'i'
-    ]
-    */
+    /*split(delimiter, numberOfStringToReturn) =>
+    [ 'Laugh', 'it', 'up,', 'fuzzball!' ] */
    
 //startsWith()	Checks whether a string begins with specified characters
-//starting at position 0
-let startsWith = email.startsWith("gmail");
+//starting at index 0
+let startsWithString = "Let go of your hate.";
+let startsWith = startsWithString.startsWith("go");
+console.log("startsWith(valueToStartAt) =>");
 console.log(startsWith);
-//false
+/*startsWith(valueToStartAt) =>
+false */
     
-    //starting at position 22
-    let startsWithPosition = email.startsWith("gmail", 23);
+    //starting at index 22
+    let startsWithPositionString = "Even the smallest person can change the course of the future.";
+    let startsWithPosition = startsWithPositionString.startsWith("change", 23);
+    console.log("startsWith(valueToStartAt, indexToStartAt) =>");
     console.log(startsWithPosition);
-    //true
+    /*startsWith(valueToStartAt, indexToStartAt) =>
+    false */
 
 //substr()	Extracts a number of characters from a string, from a start index (position)
-let substr = email.substr(5);
+let substrStringy = "The Quest stands upon the edge of a knife";
+let substr = substrStringy.substr(5);
+console.log("substr(startIndex) =>");
 console.log(substr);
-//a.flimzy_grub4290@gmail.com
+/*substr(startIndex) =>
+uest stands upon the edge of a knife */
 
     //starting at index 1 and 4 more characters, (length)
-    let substrPosition = email.substr(1,4);
+    let substrPositionString = "Stray but a little, and it will fail, to the ruin of all";
+    let substrPosition = substrPositionString.substr(1,4);
+    console.log("substr(startIndex, lengthToReturn) =>");
     console.log(substrPosition);
+    /*substr(startIndex, lengthToReturn) =>
+    tray */
 
-    //using engative start position
-    let substrPositionNeg = email.substr(-4,4);
-    console.log("substrPositionNeg: " + substrPositionNeg);
-    //.com    because it started from the end, and returned the 4 characters.
+    //using negative start position
+    let substrNegativeString = "Yet hope remains while the Company is true";
+    let substrPositionNeg = substrNegativeString.substr(-4,4);
+    console.log("(NegStartIndex, lengthToReturn) =>");
+    console.log(substrPositionNeg);
+    /* (NegStartIndex, lengthToReturn) =>
+    true   because it started from the end, and returned the 4 characters.*/
 
 //substring()	Extracts characters from a string, between two specified indices (positions)
 //start at index 1, and return upto (excluding) index 4)
-let substring = email.substring(1,4);
+let substrString = "I am one with the Force and the Force is with me";
+let substring = substrString.substring(3,6);
+console.log("substring(startIndex, excludingEndIndex) =>");
 console.log(substring);
-//anp
+/*substring(startIndex, excludingEndIndex) =>
+m o */
 
 //toUpperCase()	Returns a string converted to uppercase letters
-let toUpperCase = email.toUpperCase();
+let toUpperCaseString = "This is the way";
+let toUpperCase = toUpperCaseString.toUpperCase();
+console.log("toUpperCase() =>");
 console.log(toUpperCase);
-//BANPNA.FLIMZY_GRUB4290@GMAIL.COM
+/*toUpperCase() =>
+THIS IS THE WAY */
 
 //toLowerCase()	Returns a string converted to lowercase letters
-let toLowerCase = email.toLowerCase();
+let toLowerCaseString = "I’m a big deal in the resistance";
+let toLowerCase = toLowerCaseString.toLowerCase();
+console.log("toLowerCase() =>");
 console.log(toLowerCase);
-//banpna.flimzy_grub4290@gmail.com
+/*toLowerCase() =>
+i’m a big deal in the resistance */
 
 //toString()	Returns a string or a string object as a string
-let toString = nums.toString();
-console.log(toString + 1);
-//1546523681  it added a "1" to the end as opposed to addition 1 to make  154652369
+let stringArray = ["Rebellions", "are", "built", "on", "hope"];
+let toString = stringArray.toString();
+console.log("toString() =>");
+console.log(toString);
+/*toString() =>
+Rebellions,are,built,on,hope  */
 
 //trim()	Returns a string with removed whitespaces from start and end ONLY
-let trim = extraStringwithSpaces.trim();
+let trimString = "    Make ten men feel like a hundred    ";
+let trim = trimString.trim();
+console.log("trim() =>");
 console.log(trim);
-//Jely         with an L
-
-
-
-
+/*trim() =>
+Make ten men feel like a hundred */
