@@ -3,7 +3,7 @@ let charAtString = "felina";
 let charAt = charAtString.charAt(3);
 console.log("charAt() =>")
 console.log(charAt);
-/* charAt() =>
+/* charAt() =>  
 i*/
 
 
