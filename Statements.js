@@ -1,11 +1,21 @@
-//For       defines a code block that is executed as long as a condition is true.
-//Loop (iterate over) a code block five times:
+let users = {
+    Alan: {
+      age: 27,
+      online: false
+    },
+    Jeff: {
+      age: 32,
+      online: true
+    },
+    Sarah: {
+      age: 48,
+      online: false
+    },
+    Ryan: {
+      age: 19,
+      online: true
+    }
+  };
 
-// let stringArray = ["You", "Are", "A", "Wizard", "Harry"];
-// for (let i=0; i<5; i++){
-//     console.log(i);
-// }
-
-let num = '5';
-num = Number(num);
-console.log(Number(num)+3);
+let y = users.push('BOB');
+ 
