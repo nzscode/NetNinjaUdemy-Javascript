@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Javascript.css">
+    <title>Async Javascript Web Reference Page</title>
+</head>
+<body>
+    <div>
+        <h2>Javascript</h2>
+<!-- -------------------------- Converting a Function Expression to an Arrow Function: -------------------------- -->
+        <div>
+            <span class="code-example">Converting a Function Expression to an Arrow Function: </span>
+            <div class="code-wrapper">
+                <code >
+                    <span class="comment">//Regular Function Expression</span><br>
+                    <span class="aqua">let</span>
+                    <span class="green">greet</span>
+                    <span class="red">=</span>
+                    <span class="aqua"><i>function</i></span>
+                    <span class="white">(</span><span class="orange">name</span><span class="white">) {</span> <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="white">console.</span><span class="green">log</span>
+                    <span class="white">(</span><span class="white">`Hello </span><span class="purple">${</span><span class="orange">name</span><span class="purple">}</span><span class="white">`</span><span class="white">);</span><br>
+                    <span class="white">}</span>
+                    <br>
+                    <br>
+                    <span class="green">greet</span><span class="white">();</span>
+                </code>
+                <br><br><br>
+                <code >
+                    <span class="comment">//Converted to an Arrow Function</span><br>
+                    <span class="aqua">let</span>
+                    <span class="green">greetArrow</span>
+                    <span class="red">=</span>
+                    <span class="white">((</span><span class="orange">name</span><span class="white">)</span><span class="aqua"><i> =&gt;</i></span><span class="white"> {</span> <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="white">console.</span><span class="green">log</span>
+                    <span class="white">(</span><span class="white">`Hello </span><span class="purple">${</span><span class="orange">name</span><span class="purple">}</span><span class="white">`</span><span class="white">);</span><br>
+                    <span class="white">}</span><span class="white">)</span>
+                    <br>
+                    <br>
+                    <span class="green">greetArrow</span><span class="white">();</span>
+                </code>
+            </div>
+        </div>
+        <br>
+        <div>
+            <span class="output">Output</span>
+            <div class="code-wrapper">
+                <code >
+                    <span class="white">Hello undefined</span><br>
+                    <span class="white">Hello undefined</span>
+                </code>
+            </div>
+        </div>
+<!-- -------------------------- Converting a Function Expression to an Arrow Function: -------------------------- -->
+
+<div class="grey-line"></div>
+
+<!-- -------------------------- Function Expression vs Function Declaration -------------------------- -->
+        <div>
+            <span class="code-example">Functions</span>
+            <div class="code-wrapper">
+                <code >
+                    <span class="comment">//Regular Function Expression</span><br>
+                    <span class="aqua">let</span>
+                    <span class="green">greetExpression</span>
+                    <span class="red">=</span>
+                    <span class="aqua"><i>function</i></span>
+                    <span class="white">(</span><span class="orange">name</span><span class="white">) {</span> <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="white">console.</span><span class="green">log</span>
+                    <span class="white">(</span><span class="white">`Function Expression =&gt; Hello </span><span class="purple">${</span><span class="orange">name</span><span class="purple">}</span><span class="white">`</span><span class="white">);</span><br>
+                    <span class="white">}</span>
+                    <br>
+                    <br>
+                    <span class="green">greetExpression</span><span class="white">();</span>
+                </code>
+                <br><br><br>
+                <code >
+                    <span class="comment">//Regular Function Declaration</span><br>
+                    <span class="aqua">function </span><span class="green">greetDeclaration</span>
+                    <span class="white">(</span><span class="orange">name</span><span class="white">) {</span> <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="white">console.</span><span class="green">log</span>
+                    <span class="white">(</span><span class="white">`Function Declaration =&gt; Hello </span><span class="purple">${</span><span class="orange">name</span><span class="purple">}</span><span class="white">`</span><span class="white">);</span><br>
+                    <span class="white">}</span>
+                    <br>
+                    <br>
+                    <span class="green">greetDeclaration</span><span class="white">();</span>
+                </code>
+            </div>
+        </div>
+        <br>
+        <div>
+            <span class="output">Output</span>
+            <div class="code-wrapper">
+                <code >
+                    <span class="white">Function Expression =&gt; Hello undefined</span><br>
+                    <span class="white">Function Declaration =&gt; Hello undefined</span>
+                </code>
+            </div>
+        </div>
+<!-- -------------------------- Function Expression vs Function Declaration -------------------------- -->
+        <div class="grey-line"></div>
+<!-- -------------------------- Async -------------------------- -->
+        <div>
+            <span class="code-example">Async </span>
+            <div class="code-wrapper">
+                <code >
+                    <span class="comment">//Async Example</span><br>
+                    &nbsp;<span class="white">console.</span><span class="green">log</span>
+                    <span class="white">(<span class="orange">1</span><span class="purple"><span class="white">);</span><br>
+                    &nbsp;<span class="white">console.</span><span class="green">log</span>
+                    <span class="white">(<span class="orange">2</span><span class="purple"><span class="white">);</span><br>
+                    &nbsp;<span class="aqua">setTimeout</span>
+                    <span class="white">(()</span><span class="aqua"><i> =&gt;</i></span><span class="white"> {</span> <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="white">console.</span><span class="green">log</span>
+                    <span class="white">(<span class="orange">3</span><span class="purple"><span class="white">);</span><br>
+                    &nbsp;<span class="white">}<span class="white">, </span><span class="orange">2000</span></span><span class="white">);</span><br>
+                    &nbsp;<span class="white">console.</span><span class="green">log</span>
+                    <span class="white">(<span class="orange">4</span><span class="purple"><span class="white">);</span><br>
+                    &nbsp;<span class="white">console.</span><span class="green">log</span>
+                    <span class="white">(<span class="orange">5</span><span class="purple"><span class="white">);</span><br>
+                </code>
+            </div>
+        </div>
+        <br>
+        <div>
+            <span class="output">Output</span>
+            <div class="code-wrapper">
+                <code >
+                    <span class="white">1</span><br>
+                    <span class="white">2</span><br>
+                    <span class="white">4</span><br>
+                    <span class="white">5</span><br>
+                    <span class="white">3</span>
+                </code>
+            </div>
+            In the above program, the <span class="code-snippet">setTimeout</span> function runs after 2000 milliseconds (2 seconds),<br>
+             thus displaying the "3" after the rest of the code has run.
+            
+        </div>
+<!-- -------------------------- Async -------------------------- -->
+<div class="grey-line"></div>
+<!-- -------------------------- Callback Functions-------------------------- -->
+        <div>
+            <span class="code-example">Callback Functions</span>
+            <div class="code-wrapper">
+                <code >
+                    <span class="comment">//Main Function</span><br>
+                    <span class="aqua">let</span>
+                    <span class="green">mainFunction</span>
+                    <span class="red">=</span>
+                    <span class="white">((</span><span class="orange"><i>callback</i></span><span class="white">)</span><span class="aqua"> =&gt;</span><span class="white"> {</span> <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="white">console.</span><span class="green">log</span>
+                    <span class="white">('I am the main function, The callback is an argument of mine');</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="green">callback</span><span class="white">();</span><br>
+                    <span class="white">});</span>
+                    <br>
+                    <br>
+                </code>
+                <br>
+                <code >
+                    <span class="comment">//Second Function that is the callback</span><br>
+                    <span class="aqua">let </span><span class="green">secondFunction</span>
+                    <span class="red">=</span>
+                    <span class="white">(()</span><span class="aqua"> =&gt;</span><span class="white"> {</span> <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="white">console.</span><span class="green">log</span>
+                    <span class="white">('I am the second function, I am the callback function for main.');</span><br>
+                    <span class="white">});</span>
+                    <br>
+                    <br>
+                    <span class="green">mainFunction</span><span class="white">(</span><span class="green">secondFunction</span><span class="white">);</span>
+                </code>
+            </div>
+        </div>
+        <br>
+        <div>
+            <span class="output">Output</span>
+            <div class="code-wrapper">
+                <code >
+                    <span class="white">I am the main function, The callback is an argument of mine</span><br>
+                    <span class="white">I am the second function, I am the callback function for main.</span>
+                </code>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="purple-line"></div>
+        <br>
+        <br>
+        <div>
+            <span class="code-example">Another Example of a callback function</span>
+            <div class="code-wrapper">
+                <code >
+                    <span class="comment">//the pizza is assembled only once the dough is risen, in the meantime the other ingredients can be prepped</span><br><br>
+                    <span class="aqua">let </span><span class="green">makingPizza </span><span class="red">= </span><span class="white">(()</span><span class="aqua"><i> =&gt;</i> </span><span class="white"> {</span> <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="white">console.</span><span class="green">log</span>
+                    <span class="white">('Putting olives on Pizza');</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="white">console.</span><span class="green">log</span>
+                    <span class="white">('Putting mushrooms on Pizza');</span><br>
+                    <span class="white">});</span>
+                    <br>
+                    <br>
+                </code>
+                <br>
+                <code >
+                    <span class="aqua">let </span><span class="green">doughPrep</span><span class="red">=</span><span class="white">((<span class="orange">callback</span>)</span><span class="aqua"><i> =&gt;</i></span><span class="white"> {</span> <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="white">console.</span><span class="green">log</span>
+                    <span class="white">('Mix yeast with water');</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="white">console.</span><span class="green">log</span>
+                    <span class="white">('Mix flour with yeast);</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="white">console.</span><span class="green">log</span>
+                    <span class="white">('Mix in salt');</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="white">console.</span><span class="green">log</span>
+                    <span class="white">('let rise 2 hours');</span><br><br>
+                    <span class="comment">//once dough is risen use it to make pizza</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="green">callback</span><span class="white">();</span><br>
+                    <span class="white">});</span>
+                    <br>
+                    <br>
+                    <span class="green">doughPrep</span><span class="white">(</span><span class="green">makingPizza</span><span class="white">);</span>
+                </code>
+            </div>
+        </div>
+        <div>
+            <span class="output">Output</span>
+            <div class="code-wrapper">
+                <code >
+                    <span class="white">Mix yeast with water</span><br>
+                    <span class="white">Mix flour with yeast</span><br>
+                    <span class="white">Mix in salt</span><br>
+                    <span class="white">let rise 2 hours</span><br>
+                    <span class="white">Putting olives on pizza</span><br>
+                    <span class="white">Putting mushrooms on pizza</span><br>                    
+                </code>
+            </div>
+        </div>
+<!-- -------------------------- Callback Functions -------------------------- -->
+<div class="grey-line"></div>
+<!-- -------------------------- ** -------------------------- -->
+    </div>
+</body>
+</html>
