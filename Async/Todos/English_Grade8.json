@@ -1,0 +1,7 @@
+[
+    {"fname": "Jasper", "lnam": "Liccenzo", "age": 33, "teacher": true},
+    {"fname": "Zulu", "lnam": "Tomas", "age": 18, "teacher": false},
+    {"fname": "Gorman", "lnam": "Dronecs", "age": 27, "teacher": false},
+    {"fname": "Eli", "lnam": "Khan", "age": 19, "teacher": false},
+    {"fname": "Rodha", "lnam": "Paterston", "age": 42, "teacher": false}
+]
